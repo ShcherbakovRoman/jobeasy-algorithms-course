@@ -1,11 +1,11 @@
-Number = input('Please enter a random number: ')
+number = input('Please enter a random number: ')
 
 # str_number = str(Number)
 
 Odd_counter = 0
 Even_counter = 0
 
-for n in Number:
+for n in number:
     if int(n) % 2 == 0:
         Even_counter += 1
     else:
