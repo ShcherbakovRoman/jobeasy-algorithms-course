@@ -29,7 +29,10 @@ string = input("Please enter a regular random string with words separated by spa
 def find_longest_word(string):
     list_max_words = []
     all_words = string.split(' ')
-    length = len(max(all_words))
+    length = 0
+    for word in all_words:
+        if len(word) > length:
+            length = len(word)
     for i in all_words:
         if len(i) == length:
             list_max_words.append(i)
